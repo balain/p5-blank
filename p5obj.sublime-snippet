@@ -2,7 +2,7 @@
 	<content><![CDATA[
 /**
  * New file name here
- * @author John D. Lewis jolewis@ddn.com
+ * @author John D. Lewis balinjdl@gmail.com
  * @requires {@link otherFile.js}
  * @since m/d/yyyy
  * @requires {@link p5.js}
@@ -94,7 +94,7 @@ var $1 = function (p5obj) {
 	 * General class
 	 * @class
 	 * @param {string} n - Some parameter...
-	 * @author John D. Lewis jolewis@ddn.com
+	 * @author John D. Lewis balinjdl@gmail.com
 	 * @requires {@link p5.js}
 	 * @description Something here...
 	 */
