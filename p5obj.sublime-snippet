@@ -1,0 +1,120 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * New file name here
+ * @author John D. Lewis jolewis@ddn.com
+ * @requires {@link otherFile.js}
+ * @since m/d/yyyy
+ * @requires {@link p5.js}
+ * @file Useful description here
+ */
+
+/** Add this to the HTML file:
+ *
+ * <head>
+ *   <script lang="javascript" type="text/javascript" src="js/$1.js"></script>
+ *   <script type="text/javascript">var $2 = new p5($2, '$3');</script>
+ * </head>
+ * <body>
+ * <div id="$3"></div>
+ * ...
+ * </body>
+ */
+
+/**
+ * Description here
+ * @var {Object} mouseInAnyBox
+ * @private
+ */
+// var mouseInAnyBox = false;
+
+/**
+ * @function setup
+ * @description Something here...
+ */
+var $1 = function (p5obj) {
+	p5obj.setup = function() {
+		canvas1 = p5obj.createCanvas($4, $5); // Width/Height
+		// canvas1.mouseMoved(mouseMoved);
+
+		p5obj.stroke(0); 
+		p5obj.fill(150);
+
+		// item = new class1("class1");
+
+		// p5obj.noLoop();
+	};
+
+	/**
+	 * @function draw
+	 * @description Draws to the canvas
+	 */
+	p5obj.draw = function() {
+		p5obj.background(255);
+		// item.display();
+	};
+
+	/*--------------------------------*
+	 *   Optional Methods             *
+	 *--------------------------------*/
+	/**
+	 * @function func1
+	 * @param {string} arr - Data array to print
+	 * @description Something here...
+	 */
+	// function func1(arr) {
+	//	/** @todo Fill in this function */
+	//};
+
+	// function keyPressed() {
+	// 	if (keyCode === 83) { // "S" or "s"
+	// 		// Do something here...
+	// 		saveCanvas(canvas1, 'DE-timeline', 'png');
+	// 	}
+	// };
+
+	// function windowResized() {
+	// 	canvas1.position(windowWidth-960, windowHeight-200);
+	// 	redraw();
+	// 	console.log("Window resized to " + windowWidth + " x " + windowHeight);
+	// };
+
+	// function mouseMoved() { // function() {
+	// 	for (var i = 0; i < barsToDisplay.length; i++) {
+	// 		barsToDisplay[i].inside();
+	// 	}
+	// };
+
+	/*--------------------------------*
+	 *   Custom functions             *
+	 *--------------------------------*/
+	// TBD
+
+	/**
+	 * General class
+	 * @class
+	 * @param {string} n - Some parameter...
+	 * @author John D. Lewis jolewis@ddn.com
+	 * @requires {@link p5.js}
+	 * @description Something here...
+	 */
+	function class1(n) {
+		this.name = n;
+
+		/**
+		 * @function display
+		 * @description Standard P5 display function
+		 * @see {@link P5.js}
+		 */
+		this.display = function() {
+			$6
+		};
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>p5obj-js</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.javascript</scope> -->
+	<description>P5 JavaScript template (P5JS Object)</description>
+</snippet>
